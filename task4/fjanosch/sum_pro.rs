@@ -1,9 +1,7 @@
 use std::ops::{Add, Mul};
 
 fn main() {
-    let x = 5;
-    let y = 5;
-    let z = sum_pro(x, y);
+    let z = sum_pro(5, 5);
     println!("Summe: {} Produkt: {}", z.0, z.1);
 }
 

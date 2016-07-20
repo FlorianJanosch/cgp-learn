@@ -1,8 +1,8 @@
 use std::fmt::{Display, Formatter, Result};
 
 fn main() {
-    let a: i32 = 42;
-    let s = Swagger { x: a };
+    // let a: i32 = 42;
+    let s = Swagger {42};
     println!("{}", s);
 }
 
