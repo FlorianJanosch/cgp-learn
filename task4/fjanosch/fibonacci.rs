@@ -1,19 +1,19 @@
 use std::iter::Iterator;
 
 fn main() {
-    let x = fibonacci::new();
-    for i in fibonacci::new().take(20) {
+    let x = Fibonacci::new();
+    for i in Fibonacci::new().take(20) {
         println!("{}", i);
     }
 }
 
 #[derive(Debug)]
-struct fibonacci {
+struct Fibonacci {
     current: u32,
     prev: u32,
 }
 
-impl Iterator for fibonacci {
+impl Iterator for Fibonacci {
     type Item = u32;
     fn next(&mut self) -> Option<Self::Item> {
         let a = self.prev;
@@ -23,9 +23,9 @@ impl Iterator for fibonacci {
     }
 }
 
-impl fibonacci {
-    pub fn new() -> fibonacci {
-        fibonacci {
+impl Fibonacci {
+    pub fn new() -> Fibonacci {
+        Fibonacci {
             current: 1,
             prev: 0,
         }
