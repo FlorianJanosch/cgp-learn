@@ -1,5 +1,4 @@
-use std::ops::Add;
-use std::ops::Mul;
+use std::ops::{Add, Mul};
 
 fn main() {
     let x = 5;
